@@ -1,0 +1,15 @@
+type AddPlaceResolver {
+    ok: Boolean!
+    error: String
+}
+
+type Mutation {
+    AddPlace(
+        name: String!
+        lat: Float!
+        lng: Float!
+        address: String!
+        isFav: Boolean!
+        user: String!
+    ): AddPlaceResolver
+}

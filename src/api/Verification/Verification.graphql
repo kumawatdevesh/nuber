@@ -1,0 +1,9 @@
+type Verification {
+    target: String
+    key: String!
+    payload: String!
+    verified: Boolean!
+}
+
+
+
